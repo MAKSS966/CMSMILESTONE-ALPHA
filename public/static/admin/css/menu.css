@@ -1,0 +1,206 @@
+@charset "utf-8";
+/* CSS Document 
+	MAIN MENU	*/
+#head-bar-menu_ul{
+	list-style:none;
+	margin:0;
+	height:60px;
+	padding:0;
+}
+#head-bar-menu_ul li {
+	float:left;
+	text-align:center;
+	padding: 21px 0px 21px 0px;
+	margin-right:0px;
+	border-left:2px solid transparent;
+	border-right:2px solid transparent;
+}
+#head-bar-menu_ul li:hover{
+	background:url('image/head-bar-bg-3_hover.png') repeat-x;
+	
+	border-left:2px solid #666;
+	border-right:2px solid #666;
+}
+#head-bar-menu_ul li a {
+	/*font-family:Arial, Helvetica, sans-serif;*/
+	font-size:14px; 
+	color: #000000;
+	padding:20px 10px 20px 10px;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #ffffff;
+}
+#head-bar-menu_ul li ul{
+	text-decoration:none;
+	overflow:hidden;
+	display:none;
+}
+#head-bar-menu_ul li:hover ul {
+	text-decoration: none;
+	position: absolute;
+	background: #daf17e;
+	top: 60px;
+	margin-left:-2px;
+	padding: 0;
+	display: block;
+	width: 200px;
+	z-index:-1;
+	list-style-type: none;
+	border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	box-shadow: 0px 5px 20px #666;
+	-moz-box-shadow: 0px 5px 20px #666;
+	-webkit-box-shadow: 0px 5px 20px #666;
+	border-left:2px solid #666;
+}
+#head-bar-menu_ul li:hover ul li{
+	border-left:10px solid #daf17e;
+	padding:10px 10px 10px 5px;
+	clear:both;
+}
+#head-bar-menu_ul li:hover ul li:hover{
+	border-left:10px solid #c7e93b;
+	border-right:none;
+	background:#daf17e;
+}
+#head-bar-menu_ul li:hover ul li a {
+	width: 200px;
+	padding:10px 25px 10px 5px;
+	font-size:12px;
+}
+#head-bar-menu_ul li:hover ul li a:hover{
+	color:#666666;
+	text-decoration:none;
+}
+/* USER MENU */
+#head-bar-user-menu{
+	list-style:none;
+	margin:0;
+	height:60px;
+	padding:0;
+	z-index:2;
+}
+#head-bar-user-menu li {
+	float:right;
+	width:220px;
+	text-align:center;
+	padding: 21px 0px 21px 0px;
+	margin-right:0px;
+	border-left:2px solid transparent;
+	border-right:2px solid transparent;
+}
+#head-bar-user-menu li:hover{
+	background:#daf17e url(image/head-bar-bg-3_hover.png) repeat-x;
+	border-left:2px solid #666;
+	border-right:2px solid #666;
+	overflow:visible;
+}
+#head-bar-user-menu li a{
+	font-size:16px; 
+	color: #000000;
+	padding:20px 20px 20px 20px;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #ffffff;
+}
+#head-bar-user-dropdown{
+	margin: 10px auto;
+	position: absolute;
+	left: -999em;
+	text-align: left;
+	padding: 10px 5px 10px 5px;
+	border: none;
+	background: #daf17e;
+	box-shadow: 0px 5px 20px #333;
+	-moz-box-shadow: 0px 5px 20px #333;
+	-webkit-box-shadow: 0px 5px 20px #333;
+	border-bottom-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
+	-webkit-border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	-webkit-border-bottom-right-radius:10px;
+	z-index:-1;
+}
+#head-bar-user-menu li:hover #head-bar-user-dropdown{
+	left:-147.5px;
+	right:auto;
+	top:50px;
+}
+.head-bar-user-dropdown-detail{
+	width:350px;
+}
+#head-bar-user-photo{
+	float:left;
+	width:150px;
+	margin:0px auto;
+	text-align:center;
+}
+#head-bar-user-action{
+	float:right;
+	width:190px;
+	text-align:justify;
+}
+#head-bar-user-action ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#head-bar-user-action ul li{
+	text-align:justify;
+	padding: 10px 0px 10px 0px;
+	background:#daf17e;
+	border:none;
+}
+#head-bar-user-action ul li:hover{
+	text-align:justify;
+	padding: 10px 0px 10px 0px;
+	background:#daf17e;
+	border:none;
+}
+#head-bar-user-action ul li a{
+	color:#000000;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #ffffff;
+}
+#head-bar-user-action ul li a:hover{
+	color:#666666;
+	text-decoration:none;
+}
+/*submenu*/
+#submenu_left
+{
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size:14px;
+}
+#submenu_left a, #submenu_left a:link, #submenu_left a:active, #submenu_left a:visited
+{
+	display: block;
+	width:180px;
+	text-decoration: none;
+	color:#000000;
+	text-shadow: 1px 1px 1px #ffffff;
+	padding:5px 0px 5px 20px;
+}
+#submenu_left a:hover
+{
+	background:#daf17e;
+	color:#666666;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #ffffff;
+}
+#submenu_left li:first-child a:hover
+{
+	border-top-right-radius:10px;
+	-moz-border-radius-topright:10px;
+	-webkit-border-top-right-radius:10px;
+}
+#submenu_left li:last-child a:hover
+{
+	border-bottom-right-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	-webkit-border-bottom-right-radius:10px;
+}
